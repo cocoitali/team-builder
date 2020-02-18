@@ -6,15 +6,15 @@ function App() {
 		<div className='App'>
 			<form>
 				<label>
-					Name: <input type='text'></input>
+					Name: <input id='name' type='text'></input>
 				</label>
 				<label>
-					Email: <input type='email'></input>
+					Email: <input id='email' type='email'></input>
 				</label>
 				<label>
-					Role: <input type='text'></input>
+					Role: <input id='role' type='text'></input>
 				</label>
-        <input type='submit'></input>
+				<input type='submit'></input>
 			</form>
 		</div>
 	)
