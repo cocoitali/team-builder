@@ -14,6 +14,7 @@ function App() {
 				<label>
 					Role: <input type='text'></input>
 				</label>
+        <input type='submit'></input>
 			</form>
 		</div>
 	)
