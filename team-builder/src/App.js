@@ -5,7 +5,15 @@ function App() {
 	return (
 		<div className='App'>
 			<form>
-				<input></input>
+				<label>
+					Name: <input type='text'></input>
+				</label>
+				<label>
+					Email: <input type='email'></input>
+				</label>
+				<label>
+					Role: <input type='text'></input>
+				</label>
 			</form>
 		</div>
 	)
