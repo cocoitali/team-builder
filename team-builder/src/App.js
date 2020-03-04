@@ -17,18 +17,18 @@ function App() {
 
 	const onSubmit = e => {
 		e.preventDefault()
+		setFormValues({name: '', email: '', role: ''})
 		alert(
 			`Thankyou for your submission, ${formValues.name}. We'll reach you at ${formValues.email} for future correspondence`
 		)
-	} 
+	}
 	return (
 		<div className='App'>
 			<form onSubmit={e => onSubmit(e)}>
 				<label>
 					Name:
 					<input
-						id='name'
-						placeholder='enter name'
+						value={formValues.name}
 						type='text'
 						name='name'
 						onChange={e => onChange(e)}
@@ -37,24 +37,22 @@ function App() {
 				<label>
 					Email:
 					<input
-						id='email'
-						placeholder='enter email'
 						type='email'
 						name='email'
-						onChange={onChange}
+						value={formValues.email}
+						onChange={e => onChange(e)}
 					></input>
 				</label>
 				<label>
 					Role:
 					<input
-						id='role'
-						placeholder='what is your role?'
+						value={formValues.role}
 						type='text'
 						name='role'
-						onChange={onChange}
+						onChange={e => onChange(e)}
 					></input>
 				</label>
-				<input type='submit'></input>
+				<button >Submit</button>
 			</form>
 		</div>
 	)
