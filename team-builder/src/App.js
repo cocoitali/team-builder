@@ -14,7 +14,7 @@ function App() {
 	const onChange = e => {
 		setFormValues({
 			...formValues,
-			[e.targe.name]: e.target.value
+			[e.target.name]: e.target.value
 		})
 	}
 
