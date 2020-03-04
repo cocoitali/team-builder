@@ -7,9 +7,6 @@ function App() {
 		email: ' ',
 		role: ' '
 	})
-	// const [name, setName] = useState('')
-	// const [email, setEmail] = useState('')
-	// const [role, setRole] = useState('role')
 
 	const onChange = e => {
 		setFormValues({
@@ -23,17 +20,18 @@ function App() {
 		alert(
 			`Thankyou for your submission, ${formValues.name}. We'll reach you at ${formValues.email} for future correspondence`
 		)
-	}
+	} 
 	return (
 		<div className='App'>
-			<form onSubmit = {onSubmit}>
+			<form onSubmit={e => onSubmit(e)}>
 				<label>
 					Name:
 					<input
 						id='name'
 						placeholder='enter name'
 						type='text'
-						onChange={onChange}
+						name='name'
+						onChange={e => onChange(e)}
 					></input>
 				</label>
 				<label>
@@ -42,6 +40,7 @@ function App() {
 						id='email'
 						placeholder='enter email'
 						type='email'
+						name='email'
 						onChange={onChange}
 					></input>
 				</label>
@@ -51,6 +50,7 @@ function App() {
 						id='role'
 						placeholder='what is your role?'
 						type='text'
+						name='role'
 						onChange={onChange}
 					></input>
 				</label>
