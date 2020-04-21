@@ -1,6 +1,6 @@
 # Module Project: Forms - Team Builder
 
-This project allows you to practice the concepts and techniques learned in this module and apply them in a concrete project. This module explored Form management in React. You learned about controled inputs, semantic HTML, some ES6 tools like the spread operator and computer properties, and synthetic events. In your project you will demonstrate proficiency of these subjects and principles by creating an application using each of these.
+This project explores Form management in React. In your project you will demonstrate proficiency of controled inputs, semantic HTML, some ES6 tools like the spread operator, computer properties, and synthetic events by creating an application using each of these.
 
 ## Instructions
 
@@ -17,21 +17,11 @@ In this project you'll build an app that will keep track of memebers of a team. 
 ## Project Set Up
 
 - [ ] Create a forked copy of this project.
-- [ ] Add your team lead as collaborator on Github.
 - [ ] Clone your OWN version of the repository in your terminal
 - [ ] Use `npx create react-app team-builder` or `create react-app team-builder` to initiate the project.
 - [ ] CD into your `team-builder` directory
 - [ ] Using the same command tool (yarn or npm) start up the app using `yarn start` or `npm start`
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
 
-Follow these steps for completing your project.
-
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repository). **Please don't merge your own pull request**
-- [ ] Add your team lead as a reviewer on the pull-request
-- [ ] Your team lead will count the project as complete by merging the branch back into master.
-- [ ] Do your magic!
 
 ## Minimum Viable Product
 
